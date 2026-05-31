@@ -77,7 +77,7 @@ public class ControlVacunas implements CrudVacuna {
             return;
         }
         for (Map.Entry<String, String> e : mapaVacunas.entrySet()) {
-            System.out.println(" Código Mascota: " + e.getKey() + " -> Vacuna: " + e.getValue());
+            System.out.println("Mascota: " + e.getKey() + " | Vacuna aplicada: " + e.getValue());
         }
     }
 }

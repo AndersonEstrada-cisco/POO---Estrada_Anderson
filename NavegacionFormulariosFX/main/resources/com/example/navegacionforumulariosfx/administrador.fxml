@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label layoutX="64.0" layoutY="83.0" text="Producto:" />
+        <Label layoutX="64.0" layoutY="125.0" text="ID:" />
+        <Label layoutX="64.0" layoutY="174.0" text="Precio:" />
+        <Label alignment="CENTER" layoutX="46.0" layoutY="27.0" prefHeight="17.0" prefWidth="510.0" text="Panel de Administrador">
+         <font>
+            <Font name="Cambria" size="22.0" />
+         </font></Label>
+        <Label layoutX="66.0" layoutY="215.0" text="Stock:" />
+        <TextField fx:id="txtProducto" layoutX="136.0" layoutY="79.0" />
+        <TextField fx:id="txtID" layoutX="134.0" layoutY="125.0" />
+        <TextField fx:id="txtPrecio" layoutX="136.0" layoutY="170.0" />
+        <TextField fx:id="txtStock" layoutX="136.0" layoutY="211.0" />
+    </children>
+</AnchorPane>

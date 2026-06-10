@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.interfazacceso.HelloController">
+    <children>
+        <Label layoutX="65.0" layoutY="71.0" text="Cliente:" />
+        <Label layoutX="65.0" layoutY="113.0" text="Cédula:" />
+        <Label layoutX="65.0" layoutY="162.0" text="Dirección:" />
+        <Label layoutX="241.0" layoutY="20.0" text="REGISTRO DE CLIENTE" />
+        <Label layoutX="67.0" layoutY="203.0" text="Telefono:" />
+        <TextField fx:id="txtProducto" layoutX="138.0" layoutY="67.0" />
+        <TextField fx:id="txtCedula" layoutX="138.0" layoutY="113.0" />
+        <TextField fx:id="txtDireccion" layoutX="137.0" layoutY="158.0" />
+        <TextField fx:id="txtTelefono" layoutX="137.0" layoutY="199.0" />
+        <Button layoutX="59.0" layoutY="262.0" mnemonicParsing="false" onAction="#btnRegistrarCliente" text="Registrar Cliente" />
+        <Button layoutX="178.0" layoutY="262.0" mnemonicParsing="false" onAction="#btnLimpiar" text="Limpiar" />
+    </children>
+</AnchorPane>

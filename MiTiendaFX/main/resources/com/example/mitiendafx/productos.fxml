@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="705.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mitiendafx.ProductosController">
+   <children>
+      <Button layoutX="75.0" layoutY="276.0" mnemonicParsing="false" onAction="#btnNuevo" text="Nuevo" />
+      <Label fx:id="lblProductosTitulo" layoutX="77.0" layoutY="52.0" prefHeight="25.0" prefWidth="210.0" text="Productos" />
+      <Label fx:id="lblCodigo" layoutX="77.0" layoutY="94.0" text="Codigo del Producto" />
+      <Label fx:id="lblNombreProducto" layoutX="282.0" layoutY="94.0" text="Nombre del Producto" />
+      <Label fx:id="lblCategoria" layoutX="501.0" layoutY="94.0" text="Categoría" />
+      <Label fx:id="lblPrecio" layoutX="78.0" layoutY="180.0" text="Precio" />
+      <Label fx:id="lblStock" layoutX="287.0" layoutY="180.0" text="Stock" />
+      <Label fx:id="lblEstado" layoutX="501.0" layoutY="180.0" text="Estado" />
+      <ComboBox fx:id="cmbCategoria" layoutX="501.0" layoutY="121.0" prefHeight="54.0" prefWidth="161.0" />
+      <ComboBox fx:id="cmbEstado" layoutX="501.0" layoutY="201.0" prefHeight="12.0" prefWidth="161.0" />
+      <TextField fx:id="txtProducto" layoutX="278.0" layoutY="125.0" />
+      <TextField fx:id="txtStock" layoutX="278.0" layoutY="201.0" />
+      <TextField fx:id="txtPrecio" layoutX="77.0" layoutY="201.0" />
+      <TextField fx:id="txtCodigo" layoutX="77.0" layoutY="125.0" />
+      <Button layoutX="182.0" layoutY="276.0" mnemonicParsing="false" onAction="#btnGuardar" text="Guardar" />
+      <Button layoutX="304.0" layoutY="276.0" mnemonicParsing="false" onAction="#btnActualizar" text="Actualizar" />
+      <Button layoutX="431.0" layoutY="276.0" mnemonicParsing="false" onAction="#btnEliminar" text="Eliminar" />
+      <TableView fx:id="tablaProductos" layoutX="78.0" layoutY="339.0" prefHeight="223.0" prefWidth="585.0">
+        <columns>
+          <TableColumn fx:id="colCodigo" prefWidth="105.0" text="Codigo" />
+           <TableColumn fx:id="colNombre" prefWidth="97.0" text="Nombre" />
+           <TableColumn fx:id="colCategoria" prefWidth="113.0" text="Categoría" />
+            <TableColumn fx:id="colPrecio" text="Precio" />
+          <TableColumn fx:id="colStock" prefWidth="82.0" text="Stock" />
+            <TableColumn fx:id="colEstado" prefWidth="106.0" text="Estado" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

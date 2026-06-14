@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="342.0" prefWidth="292.0" spacing="20.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mitiendafx.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="lblMiTienda" text="MiTienda" />
+    <Label fx:id="lblSistema" text="Sistema de Ventas" />
+   <Label fx:id="lblIniciarSesion" text="Iniciar Sesión" />
+   <Label fx:id="lblUsuario" text="Usuario" />
+   <TextField fx:id="txtUsuario" />
+   <Label fx:id="lblContrasena" text="Contraseña" />
+   <PasswordField fx:id="txtContrasena" />
+   <Label fx:id="lblRol" text="Rol" />
+   <ComboBox fx:id="cmbRol" prefWidth="150.0" />
+
+    <Button fx:id="btnIngresar" onAction="#btnIngresar" text="Ingresar" />
+   <Label fx:id="lblMensaje" />
+</VBox>

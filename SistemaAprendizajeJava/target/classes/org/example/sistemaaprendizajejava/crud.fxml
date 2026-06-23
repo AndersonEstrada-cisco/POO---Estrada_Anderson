@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.sistemaaprendizajejava.CrudController">
+
+    <top>
+        <VBox spacing="8">
+            <padding>
+                <Insets bottom="10" left="15" right="15" top="15" />
+            </padding>
+
+            <Label text="Registro de trabajadores" />
+
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Label text="Cédula:" />
+                <TextField fx:id="txtCedula" />
+
+                <Label text="Nombre:" />
+                <TextField fx:id="txtNombre" />
+
+                <Label text="Apellido:" />
+                <TextField fx:id="txtApellido" />
+
+                <Label text="Edad:" />
+                <TextField fx:id="txtEdad" prefWidth="60" />
+            </HBox>
+
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Label text="Correo:" />
+                <TextField fx:id="txtCorreo" />
+
+                <Label text="Estado Civil:" />
+                <ComboBox fx:id="cbEstadoCivil" promptText="Seleccione" />
+
+                <Label text="Cargo:" />
+                <ComboBox fx:id="cbCargo" promptText="Seleccione" />
+            </HBox>
+
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Label text="Jornada:" />
+                <RadioButton fx:id="rbMedioTiempo" text="Medio tiempo" />
+                <RadioButton fx:id="rbTiempoCompleto" text="Tiempo completo" />
+            </HBox>
+
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Label text="Observaciones:" />
+                <TextArea fx:id="txtObservaciones" prefRowCount="2" prefWidth="300" />
+            </HBox>
+
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Button fx:id="btnGuardar" onAction="#btnGuardar" text="Guardar" />
+                <Button fx:id="btnActualizar" onAction="#btnActualizar" text="Actualizar" />
+                <Button fx:id="btnEliminar" onAction="#btnEliminar" text="Eliminar" />
+                <Button fx:id="btnLimpiar" onAction="#btnLimpiar" text="Limpiar" />
+            </HBox>
+        </VBox>
+    </top>
+
+    <center>
+        <VBox>
+            <padding>
+                <Insets bottom="15" left="15" right="15" top="0" />
+            </padding>
+
+            <TableView fx:id="tablaTrabajadores" onMouseClicked="#seleccionarFila">
+                <columns>
+                    <TableColumn fx:id="colCedula" prefWidth="90" text="Cédula" />
+                    <TableColumn fx:id="colNombre" prefWidth="100" text="Nombre" />
+                    <TableColumn fx:id="colApellido" prefWidth="100" text="Apellido" />
+                    <TableColumn fx:id="colEdad" prefWidth="50" text="Edad" />
+                    <TableColumn fx:id="colCorreo" prefWidth="150" text="Correo" />
+                    <TableColumn fx:id="colEstadoCivil" prefWidth="90" text="Estado Civil" />
+                    <TableColumn fx:id="colJornada" prefWidth="100" text="Jornada" />
+                    <TableColumn fx:id="colCargo" prefWidth="100" text="Cargo" />
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+
+</BorderPane>

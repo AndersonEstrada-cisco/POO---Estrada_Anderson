@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.sistemaaprendizajejava.LoginController"
+      spacing="10" alignment="CENTER">
+
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30" />
+    </padding>
+
+    <Label text="Inicio de sesión" />
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Usuario:" />
+        <TextField fx:id="txtUsuario" promptText="Usuario" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Contraseña:" />
+        <PasswordField fx:id="txtClave" promptText="Contraseña" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="btnIngresar" text="Ingresar" onAction="#btnIngresar" />
+        <Button fx:id="btnSalir" text="Salir" onAction="#btnSalir" />
+    </HBox>
+
+</VBox>
